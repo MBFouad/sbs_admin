@@ -38,15 +38,29 @@ Before you begin, ensure you have met the following requirements:
     php bin/console server:start
     ```
 
+## Importing Sample Data
+
+To import sample data, run the following command:
+
+```bash
+php bin/console ugo:orders:import
+``` 
+
 ## Testing
+
 ### Execute tests using PHPUnit:
+
    ```bash
    ./vendor/bin/phpunit
    ```
+
 ## Cross-Origin Request Blocked:
- currently the application accept request from localhost:[0-9]+ to change that you can update the config/packages/nelmio_cors.yaml file to accept request from any origin
+
+currently the application accept request from localhost:[0-9]+ to change that you can update the
+config/packages/nelmio_cors.yaml file to accept request from any origin
 
 ### development steps
+
 - composer install
 - bin/console make:entity
 - php bin/console make:migration
